@@ -1,6 +1,5 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.copilot",
     "lazyvim.plugins.extras.editor.outline",
     "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.formatting.prettier",
@@ -14,10 +13,13 @@
     "lazyvim.plugins.extras.lang.terraform",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.linting.eslint",
-    "lazyvim.plugins.extras.lsp.none-ls"
+    "lazyvim.plugins.extras.lsp.none-ls",
+    "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.util.gitui",
+    "lazyvim.plugins.extras.vscode"
   ],
   "news": {
-    "NEWS.md": "2123"
+    "NEWS.md": "2850"
   },
   "version": 3
 }
