@@ -18,8 +18,16 @@ return {
     name = "onedark",
     opts = {
       style = "cool",
-      toggle_style_key = "<leader>t",
-      toggle_style_list = { "dark", "darker", "cool", "deep", "warm", "warmer", "light" },
+      toggle_style_list = {
+        "dark",
+        "darker",
+        "cool",
+        "deep",
+        "warm",
+        "warmer",
+        "light",
+      },
+      transparent = true,
       colors = {
         black = "#060606",
         bg0 = "#080808",
@@ -39,13 +47,7 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     opts = {
-      color_overrides = {
-        mocha = {
-          base = "#080808",
-          mantle = "#121212",
-          crust = "#080808",
-        },
-      },
+      transparent_background = true,
     },
   },
 }
