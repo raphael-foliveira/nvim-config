@@ -4,8 +4,9 @@
 --
 
 local opts = { noremap = true, silent = true }
+local set = vim.keymap.set
 
-vim.keymap.set({ "n" }, "<C-c>", "<cmd>nohl<CR>", opts)
--- vim.keymap.set({ "n" }, "<C-p>", "<cmd>Telescope find_files<CR>")
-vim.keymap.set({ "n" }, "J", "", opts)
-vim.keymap.set({ "i" }, "<C-BS>", "<C-w>", opts)
+set({ "n" }, "<C-c>", "<cmd>nohl<CR>", opts)
+set({ "n" }, "<C-p>", "<cmd>Telescope find_files<CR>")
+set({ "n" }, "J", "", opts)
+set({ "i" }, "<C-BS>", "<C-w>", opts)

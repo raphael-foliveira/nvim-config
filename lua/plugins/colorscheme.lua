@@ -6,6 +6,10 @@ return {
     },
   },
   {
+    "catppuccin/nvim",
+    name = "catppuccin",
+  },
+  {
     "Mofiqul/vscode.nvim",
     opts = {
       color_overrides = {
@@ -17,7 +21,7 @@ return {
     "navarasu/onedark.nvim",
     name = "onedark",
     opts = {
-      style = "cool",
+      style = "dark",
       toggle_style_list = {
         "dark",
         "darker",
@@ -27,27 +31,11 @@ return {
         "warmer",
         "light",
       },
-      transparent = true,
-      colors = {
-        black = "#060606",
-        bg0 = "#080808",
-        bg1 = "#202020",
-        bg2 = "#080808",
-        bg3 = "#303030",
-        bg_d = "#080808",
-      },
     },
   },
   {
     "folke/tokyonight.nvim",
     name = "tokyonight",
     opts = { style = "night" },
-  },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    opts = {
-      transparent_background = true,
-    },
   },
 }
