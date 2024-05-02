@@ -11,11 +11,6 @@ return {
   },
   {
     "Mofiqul/vscode.nvim",
-    opts = {
-      color_overrides = {
-        vscBack = "#040404",
-      },
-    },
   },
   {
     "navarasu/onedark.nvim",
