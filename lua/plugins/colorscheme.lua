@@ -16,7 +16,7 @@ return {
     "navarasu/onedark.nvim",
     name = "onedark",
     opts = {
-      style = "dark",
+      style = "darker",
       toggle_style_list = {
         "dark",
         "darker",
