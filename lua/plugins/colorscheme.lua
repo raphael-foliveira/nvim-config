@@ -5,6 +5,7 @@ return {
       colorscheme = "onedark",
     },
   },
+  { "Shatur/neovim-ayu", name = "ayu" },
   {
     "catppuccin/nvim",
     name = "catppuccin",
