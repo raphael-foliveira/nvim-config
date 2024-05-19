@@ -1,16 +1,5 @@
 return {
-  { "f-person/git-blame.nvim" },
-  {
-
-    "olrtg/nvim-emmet",
-    config = function()
-      vim.keymap.set(
-        { "n", "v" },
-        "<leader>xe",
-        require("nvim-emmet").wrap_with_abbreviation
-      )
-    end,
-  },
+  -- { "f-person/git-blame.nvim" },
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
@@ -30,4 +19,10 @@ return {
   },
   { "ThePrimeagen/vim-be-good" },
   { "tpope/vim-fugitive" },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      inlay_hints = { enabled = false },
+    },
+  },
 }

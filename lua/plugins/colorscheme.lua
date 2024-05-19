@@ -5,6 +5,8 @@ return {
       colorscheme = "onedark",
     },
   },
+  { "rose-pine/neovim" },
+  { "projekt0n/github-nvim-theme" },
   { "Shatur/neovim-ayu", name = "ayu" },
   {
     "catppuccin/nvim",
