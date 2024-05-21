@@ -1,5 +1,5 @@
 return {
-  -- { "f-person/git-blame.nvim" },
+  { "f-person/git-blame.nvim" },
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
