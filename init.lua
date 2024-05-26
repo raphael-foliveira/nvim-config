@@ -5,3 +5,5 @@ vim.api.nvim_create_autocmd("VimEnter", {
   pattern = "*",
   command = "Copilot disable",
 })
+
+vim.filetype.add({ extension = { templ = "templ" } })

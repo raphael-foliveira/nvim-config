@@ -2,10 +2,18 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "catppuccin",
     },
   },
-  { "rose-pine/neovim" },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      styles = {
+        transparency = true,
+      },
+    },
+  },
   { "projekt0n/github-nvim-theme" },
   { "Shatur/neovim-ayu", name = "ayu" },
   {
