@@ -2,9 +2,10 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "github_dark",
     },
   },
+  { "ellisonleao/gruvbox.nvim" },
   {
     "rose-pine/neovim",
     name = "rose-pine",
@@ -27,6 +28,7 @@ return {
     "navarasu/onedark.nvim",
     name = "onedark",
     opts = {
+      toggle_style_key = "<leader>ut",
       style = "darker",
       toggle_style_list = {
         "dark",
