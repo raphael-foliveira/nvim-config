@@ -2,19 +2,10 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "github_dark",
+      colorscheme = "onedark",
     },
   },
   { "ellisonleao/gruvbox.nvim" },
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    opts = {
-      styles = {
-        transparency = true,
-      },
-    },
-  },
   { "projekt0n/github-nvim-theme" },
   { "Shatur/neovim-ayu", name = "ayu" },
   {

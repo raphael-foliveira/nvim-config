@@ -1,5 +1,4 @@
 return {
-
   "olrtg/nvim-emmet",
   config = function()
     vim.keymap.set(
