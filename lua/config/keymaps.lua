@@ -12,3 +12,9 @@ set({ "n" }, "J", "", opts)
 set({ "i" }, "<C-BS>", "<C-w>", opts)
 set({ "n" }, "<leader>cp", "<cmd>Copilot disable<CR>")
 set({ "n" }, "<leader>cP", "<cmd>Copilot enable<CR>")
+
+vim.g.copilot_no_tab_map = true
+set("i", "<M-CR>", 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false,
+})
