@@ -1,7 +1,7 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
-    -- make sure mason installs the server
+    inlay_hints = { enabled = false },
     servers = {
       tsserver = {
         init_options = {
