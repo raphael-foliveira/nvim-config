@@ -23,6 +23,11 @@ set("i", "<M-l>", 'copilot#Accept("\\<CR>")', {
 })
 vim.g.copilot_no_tab_map = true
 
+set("i", "<M-h>", "copilot#Dismiss()", {
+  expr = true,
+  replace_keycodes = false,
+})
+
 set({ "n" }, "<C-c>", combined_c_c, {
   expr = true,
   replace_keycodes = false,
