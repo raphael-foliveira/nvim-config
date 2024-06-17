@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight-night",
     },
   },
   { "ellisonleao/gruvbox.nvim" },
@@ -39,6 +39,16 @@ return {
   {
     "folke/tokyonight.nvim",
     name = "tokyonight",
-    opts = { style = "night" },
+    opts = {
+      style = "night",
+      styles = {
+        comments = {
+          italic = false,
+        },
+        keywords = {
+          italic = false,
+        },
+      },
+    },
   },
 }
