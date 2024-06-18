@@ -6,5 +6,11 @@ return {
       "<leader>xe",
       require("nvim-emmet").wrap_with_abbreviation
     )
+
+    return {
+      includeLanguages = {
+        templ = "html",
+      },
+    }
   end,
 }
