@@ -1,8 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
---
-
 local function combined_c_c()
   vim.cmd("nohl")
   vim.fn["copilot#Dismiss"]()
@@ -26,8 +21,6 @@ set("i", "<M-h>", "copilot#Dismiss()", {
   expr = true,
   replace_keycodes = false,
 })
-
-set({ "i", "v" }, "<C-c>", "<C-[>")
 
 set({ "n" }, "<C-c>", combined_c_c, {
   expr = true,
