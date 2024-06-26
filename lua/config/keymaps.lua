@@ -22,8 +22,6 @@ set("i", "<M-h>", "copilot#Dismiss()", {
   replace_keycodes = false,
 })
 
-set({ "i", "v" }, "<C-c>", "<C-[>")
-
 set({ "n" }, "<C-c>", combined_c_c, {
   expr = true,
   replace_keycodes = false,
