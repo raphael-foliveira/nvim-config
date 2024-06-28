@@ -75,6 +75,9 @@ require("github-theme").setup({
   groups = {
     all = {
       CursorLine = CursorLine,
+      Normal = { bg = "#121212" },
+      NormalNC = { bg = "#121212" },
+      NormalFloat = { bg = "#181818" },
     },
   },
 })
