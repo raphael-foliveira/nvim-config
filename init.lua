@@ -1,4 +1,3 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
 vim.filetype.add({ extension = { templ = "templ" } })
@@ -58,10 +57,13 @@ local CursorLine = { bg = "#141414" }
 
 require("rose-pine").setup({
   styles = {
-    transparency = true,
+    transparency = false,
     italic = false,
   },
   highlight_groups = {
+    Normal = { bg = "#121212" },
+    NormalNC = { bg = "#121212" },
+    NormalFloat = { bg = "#181818" },
     CursorLine = CursorLine,
   },
 })
