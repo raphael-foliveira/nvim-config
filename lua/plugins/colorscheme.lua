@@ -5,7 +5,18 @@ return {
       colorscheme = "tokyonight-night",
     },
   },
-  { "ellisonleao/gruvbox.nvim" },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    opts = {
+      style = "dark",
+      contrast = "hard",
+    },
+  },
+
   { "projekt0n/github-nvim-theme" },
   { "Shatur/neovim-ayu", name = "ayu" },
   {

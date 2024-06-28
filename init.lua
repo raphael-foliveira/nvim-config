@@ -53,3 +53,28 @@ lspconfig.htmx.setup({
   capabilities = Capabilities,
   filetypes = { "html", "templ" },
 })
+
+local CursorLine = { bg = "#141414" }
+
+require("rose-pine").setup({
+  styles = {
+    transparency = true,
+    italic = false,
+  },
+  highlight_groups = {
+    CursorLine = CursorLine,
+  },
+})
+
+require("github-theme").setup({
+  options = {
+    transparent = true,
+  },
+  groups = {
+    all = {
+      CursorLine = CursorLine,
+    },
+  },
+})
+
+vim.cmd("colorscheme rose-pine-moon")

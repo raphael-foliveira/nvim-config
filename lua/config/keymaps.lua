@@ -3,6 +3,12 @@ local function combined_c_c()
   vim.fn["copilot#Dismiss"]()
 end
 
+local function combined_c_s()
+  vim.cmd("w")
+  vim.cmd("nohl")
+  vim.fn["copilot#Dismiss"]()
+end
+
 local opts = { noremap = true, silent = true }
 local set = vim.keymap.set
 
@@ -26,3 +32,5 @@ set({ "n" }, "<C-c>", combined_c_c, {
   expr = true,
   replace_keycodes = false,
 })
+
+set({ "n" }, "<C-s>", combined_c_s, opts)
