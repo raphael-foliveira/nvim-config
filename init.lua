@@ -55,10 +55,13 @@ lspconfig.htmx.setup({
 
 -- colors
 local CursorLine = { bg = "#121212" }
-local BackgroundLight = { bg = "#121212" }
+local BackgroundLight = { bg = "#141414" }
+local BackgroundDark = { bg = "#080808" }
 
 local highlight_groups = {
   NormalFloat = BackgroundLight,
+  NormalNC = BackgroundDark,
+  Normal = BackgroundDark,
   CursorLine = CursorLine,
 }
 
@@ -72,7 +75,7 @@ require("rose-pine").setup({
 
 require("github-theme").setup({
   options = {
-    transparent = true,
+    -- transparent = true,
   },
   groups = {
     all = highlight_groups,
@@ -80,4 +83,6 @@ require("github-theme").setup({
 })
 
 vim.cmd("colorscheme rose-pine-moon")
--- vim.cmd("colorscheme catppuccin")
+-- vim.cmd("colorscheme catppuccin-macchiato")
+-- vim.cmd("colorscheme github_dark_default")
+-- vim.cmd("colorscheme tokyonight-night")
