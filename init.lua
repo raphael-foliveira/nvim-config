@@ -1,4 +1,3 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
 vim.filetype.add({ extension = { templ = "templ" } })
@@ -53,3 +52,37 @@ lspconfig.htmx.setup({
   capabilities = Capabilities,
   filetypes = { "html", "templ" },
 })
+
+-- colors
+local CursorLine = { bg = "#121212" }
+local BackgroundLight = { bg = "#141414" }
+local BackgroundDark = { bg = "#080808" }
+
+local highlight_groups = {
+  NormalFloat = BackgroundLight,
+  NormalNC = BackgroundDark,
+  Normal = BackgroundDark,
+  CursorLine = CursorLine,
+}
+
+require("rose-pine").setup({
+  styles = {
+    transparency = true,
+    italic = false,
+  },
+  highlight_groups = highlight_groups,
+})
+
+require("github-theme").setup({
+  options = {
+    -- transparent = true,
+  },
+  groups = {
+    all = highlight_groups,
+  },
+})
+
+vim.cmd("colorscheme rose-pine-moon")
+-- vim.cmd("colorscheme catppuccin-macchiato")
+-- vim.cmd("colorscheme github_dark_default")
+-- vim.cmd("colorscheme tokyonight-night")
