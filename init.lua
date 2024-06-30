@@ -54,31 +54,23 @@ lspconfig.htmx.setup({
 })
 
 -- colors
-local CursorLine = { bg = "#121212" }
-local BackgroundLight = { bg = "#141414" }
-local BackgroundDark = { bg = "#080808" }
-
-local highlight_groups = {
-  NormalFloat = BackgroundLight,
-  NormalNC = BackgroundDark,
-  Normal = BackgroundDark,
-  CursorLine = CursorLine,
-}
-
 require("rose-pine").setup({
   styles = {
     transparency = true,
     italic = false,
   },
-  highlight_groups = highlight_groups,
+  highlight_groups = {
+    CursorLine = { bg = "#121212" },
+    NormalFloat = { bg = "#141414" },
+  },
 })
 
 require("github-theme").setup({
-  options = {
-    -- transparent = true,
-  },
   groups = {
-    all = highlight_groups,
+    all = {
+      CursorLine = { bg = "#161d26" },
+      NormalFloat = { bg = "#141414" },
+    },
   },
 })
 
