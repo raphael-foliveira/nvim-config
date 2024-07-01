@@ -53,15 +53,18 @@ lspconfig.htmx.setup({
   filetypes = { "html", "templ" },
 })
 
+require("telescope").setup({
+  pickers = {
+    find_files = {
+      hidden = true,
+    },
+  },
+})
+
 -- colors
 require("rose-pine").setup({
   styles = {
-    transparency = true,
     italic = false,
-  },
-  highlight_groups = {
-    CursorLine = { bg = "#121212" },
-    NormalFloat = { bg = "#141414" },
   },
 })
 
@@ -74,7 +77,7 @@ require("github-theme").setup({
   },
 })
 
-vim.cmd("colorscheme rose-pine-moon")
+vim.cmd("colorscheme rose-pine-main")
 -- vim.cmd("colorscheme catppuccin-macchiato")
 -- vim.cmd("colorscheme github_dark_default")
 -- vim.cmd("colorscheme tokyonight-night")
