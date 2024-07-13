@@ -2,6 +2,8 @@ require("config.lazy")
 
 vim.filetype.add({ extension = { templ = "templ" } })
 
+vim.cmd("GitBlameToggle")
+
 local custom_format = function()
   if vim.bo.filetype == "templ" then
     local bufnr = vim.api.nvim_get_current_buf()
@@ -53,21 +55,6 @@ lspconfig.htmx.setup({
   filetypes = { "html", "templ" },
 })
 
-require("telescope").setup({
-  pickers = {
-    find_files = {
-      hidden = true,
-    },
-  },
-})
-
--- colors
-require("rose-pine").setup({
-  styles = {
-    italic = false,
-  },
-})
-
 require("github-theme").setup({
   groups = {
     all = {
@@ -77,7 +64,7 @@ require("github-theme").setup({
   },
 })
 
-vim.cmd("colorscheme rose-pine-main")
--- vim.cmd("colorscheme catppuccin-macchiato")
+-- vim.cmd("colorscheme rose-pine-moon")
+-- vim.cmd("colorscheme catppuccin-mocha")
 -- vim.cmd("colorscheme github_dark_default")
 -- vim.cmd("colorscheme tokyonight-night")
