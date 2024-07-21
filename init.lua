@@ -55,6 +55,18 @@ lspconfig.htmx.setup({
   filetypes = { "html", "templ" },
 })
 
+lspconfig.vtsls.setup({
+  on_attach = on_attach,
+  capabilities = Capabilities,
+  settings = {
+    typescript = {
+      preferences = {
+        importModuleSpecifier = "relative",
+      },
+    },
+  },
+})
+
 require("github-theme").setup({
   groups = {
     all = {
