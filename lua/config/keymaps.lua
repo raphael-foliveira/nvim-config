@@ -15,8 +15,8 @@ local set = vim.keymap.set
 set({ "n" }, "<C-p>", "<cmd>Telescope find_files<CR>")
 set({ "n" }, "J", "", opts)
 set({ "i" }, "<C-BS>", "<C-w>", opts)
-set({ "n" }, "<leader>cp", "<cmd>Copilot disable<CR>")
-set({ "n" }, "<leader>cP", "<cmd>Copilot enable<CR>")
+-- -- set({ "n" }, "<leader>cp", "<cmd>Copilot disable<CR>")
+-- set({ "n" }, "<leader>cP", "<cmd>Copilot enable<CR>")
 
 set("i", "<M-l>", 'copilot#Accept("\\<CR>")', {
   expr = true,
