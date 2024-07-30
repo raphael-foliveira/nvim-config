@@ -1,8 +1,3 @@
-local function combined_c_c()
-  vim.cmd("nohl")
-  vim.fn["copilot#Dismiss"]()
-end
-
 local function combined_c_s()
   vim.cmd("w")
   vim.cmd("nohl")
@@ -23,12 +18,9 @@ set("i", "<M-l>", 'copilot#Accept("\\<CR>")', {
   replace_keycodes = false,
 })
 
-set("i", "<M-h>", "copilot#Dismiss()", {
-  expr = true,
-  replace_keycodes = false,
-})
+set("i", "<C-c>", "<Esc>")
 
-set({ "n" }, "<C-c>", combined_c_c, {
+set("i", "<M-h>", "copilot#Dismiss()", {
   expr = true,
   replace_keycodes = false,
 })
