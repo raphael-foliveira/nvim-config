@@ -67,6 +67,12 @@ lspconfig.vtsls.setup({
   },
 })
 
+require("rose-pine").setup({
+  styles = {
+    italic = false,
+  },
+})
+
 require("github-theme").setup({
   groups = {
     all = {
