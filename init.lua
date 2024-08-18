@@ -84,5 +84,6 @@ require("github-theme").setup({
 
 -- vim.cmd("colorscheme rose-pine-moon")
 -- vim.cmd("colorscheme catppuccin-mocha")
--- vim.cmd("colorscheme github_dark_default")
+vim.cmd("colorscheme github_dark_default")
 -- vim.cmd("colorscheme tokyonight-night")
+-- vim.cmd("colorscheme carbonfox")

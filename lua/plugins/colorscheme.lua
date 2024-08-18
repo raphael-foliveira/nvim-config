@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "carbonfox",
+      colorscheme = "github_dark_default",
     },
   },
   { "EdenEast/nightfox.nvim" },
@@ -35,7 +35,6 @@ return {
     "navarasu/onedark.nvim",
     name = "onedark",
     opts = {
-      toggle_style_key = "<leader>ut",
       style = "darker",
       toggle_style_list = {
         "dark",
