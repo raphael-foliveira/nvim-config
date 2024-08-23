@@ -2,8 +2,6 @@ require("config.lazy")
 
 vim.filetype.add({ extension = { templ = "templ" } })
 
-vim.cmd("GitBlameToggle")
-
 local custom_format = function()
   if vim.bo.filetype == "templ" then
     local bufnr = vim.api.nvim_get_current_buf()
