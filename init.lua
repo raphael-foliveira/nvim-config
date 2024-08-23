@@ -36,6 +36,12 @@ lspconfig.templ.setup({
   capabilities = Capabilities,
 })
 
+lspconfig.htmx.setup({
+  on_attach = on_attach,
+  capabilities = Capabilities,
+  filetypes = { "html", "templ" },
+})
+
 lspconfig.tailwindcss.setup({
   on_attach = on_attach,
   capabilities = Capabilities,
@@ -49,12 +55,6 @@ lspconfig.html.setup({
   filetypes = { "html", "templ" },
 })
 
-lspconfig.htmx.setup({
-  on_attach = on_attach,
-  capabilities = Capabilities,
-  filetypes = { "html", "templ" },
-})
-
 lspconfig.vtsls.setup({
   on_attach = on_attach,
   capabilities = Capabilities,
@@ -62,14 +62,9 @@ lspconfig.vtsls.setup({
     typescript = {
       preferences = {
         importModuleSpecifier = "relative",
+        importModuleSpecifierEnding = "minimal",
       },
     },
-  },
-})
-
-require("rose-pine").setup({
-  styles = {
-    italic = false,
   },
 })
 
@@ -84,6 +79,6 @@ require("github-theme").setup({
 
 -- vim.cmd("colorscheme rose-pine-moon")
 -- vim.cmd("colorscheme catppuccin-mocha")
-vim.cmd("colorscheme github_dark_default")
+-- vim.cmd("colorscheme github_dark_default")
 -- vim.cmd("colorscheme tokyonight-night")
--- vim.cmd("colorscheme carbonfox")
+vim.cmd("colorscheme carbonfox")
