@@ -16,7 +16,7 @@ set("i", "<M-l>", 'copilot#Accept("\\<CR>")', {
   replace_keycodes = false,
 })
 
-set("i", "<C-c>", "<Esc>")
+set({ "i", "n", "v" }, "<C-c>", "<Esc>:nohl<CR>")
 
 set("i", "<M-h>", "copilot#Dismiss()", {
   expr = true,
