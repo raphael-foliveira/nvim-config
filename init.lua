@@ -80,7 +80,18 @@ require("github-theme").setup({
   },
 })
 
+require("onedark").setup({
+  style = "darker",
+})
+
+require("rose-pine").setup({
+  styles = {
+    italic = false,
+  },
+})
+
 -- vim.cmd("colorscheme catppuccin-mocha")
 -- vim.cmd("colorscheme github_dark_default")
-vim.cmd("colorscheme tokyonight-night")
--- vim.cmd("colorscheme carbonfox")
+-- vim.cmd("colorscheme tokyonight-night")
+vim.cmd("colorscheme carbonfox")
+-- vim.cmd("colorscheme rose-pine")
