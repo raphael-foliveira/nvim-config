@@ -1,9 +1,6 @@
 return {
   {
     "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "github_dark_default",
-    },
   },
   { "EdenEast/nightfox.nvim" },
   { "navarasu/onedark.nvim" },
