@@ -23,6 +23,7 @@ set({ "i" }, "<C-c>", function()
     cmp.close()
   end
   vim.cmd("nohl")
+  vim.cmd("stopinsert")
 end, opts)
 
 -- set("i", "<M-h>", "copilot#Dismiss()", {

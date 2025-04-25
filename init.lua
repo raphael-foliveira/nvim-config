@@ -1,15 +1,5 @@
 require("config.lazy")
 
-local lspconfig = require("lspconfig")
-
-lspconfig.gopls.setup({
-  settings = {
-    gopls = {
-      buildFlags = { "-tags=unit,integration,mocks,e2e" },
-    },
-  },
-})
-
 require("github-theme").setup({
   groups = {
     all = {
@@ -33,7 +23,11 @@ require("rose-pine").setup({
 -- vim.cmd("colorscheme github_dark_default")
 -- vim.cmd("colorscheme tokyonight-night")
 -- vim.cmd("colorscheme carbonfox")
-vim.o.background = "dark"
+-- require("onedark").load()
+--
+-- vim.o.background = "dark"
+
+-- GRUVBOX CONFIG START --
 require("gruvbox").setup({
   terminal_colors = true,
   overrides = {
@@ -61,4 +55,4 @@ vim.api.nvim_set_hl(0, "LspReferenceText", { bg = "NONE", underline = false })
 vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = "NONE", underline = false })
 vim.api.nvim_set_hl(0, "LspReferenceWrite", { bg = "NONE", underline = false })
 
--- require("onedark").load()
+-- GRUVBOX CONFIG END --
