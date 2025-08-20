@@ -9,7 +9,7 @@ local set = vim.keymap.set
 
 set({ "n" }, "<C-p>", "<cmd>Telescope find_files<CR>")
 set({ "n" }, "J", "", opts)
-set({ "i" }, "<C-BS>", "<C-w>", opts)
+set({ "i" }, "<M-BS>", "<C-w>", opts)
 
 -- set("i", "<M-l>", 'copilot#Accept("\\<CR>")', {
 --   expr = true,
