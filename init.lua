@@ -20,10 +20,10 @@ require("onedark").setup({
 -- })
 
 -- vim.cmd("colorscheme catppuccin-mocha")
--- vim.cmd("colorscheme github_dark_default")
+vim.cmd("colorscheme github_dark_default")
 -- vim.cmd("colorscheme tokyonight-night")
 -- vim.cmd("colorscheme carbonfox")
-vim.cmd("colorscheme onedark")
+-- vim.cmd("colorscheme onedark")
 -- require("onedark").load()
 --
 -- vim.o.background = "dark"
