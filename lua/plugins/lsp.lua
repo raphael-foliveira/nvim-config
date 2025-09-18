@@ -4,18 +4,20 @@ return {
     opts = {
       inlay_hints = { enabled = false },
       servers = {
+        vtsls = {
+          settings = {
+            typescript = {
+              preferences = {
+                importModuleSpecifier = "relative",
+                importModuleSpecifierEnding = "minimal",
+              },
+            },
+          },
+        },
         gopls = {
           settings = {
             gopls = {
               staticcheck = false,
-            },
-          },
-        },
-        vtsls = {
-          typescript = {
-            preferences = {
-              importModuleSpecifier = "relative",
-              importModuleSpecifierEnding = "minimal",
             },
           },
         },
