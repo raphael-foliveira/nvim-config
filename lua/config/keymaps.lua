@@ -33,7 +33,5 @@ end, opts)
 --
 set({ "n" }, "<C-s>", combined_c_s, opts)
 
-set({ "n" }, "<C-\\>", "<cmd>ToggleTerm size=20 direction=horizontal<CR>")
-set({ "t" }, "<C-\\>", "<cmd>ToggleTerm<CR>")
 set({ "n" }, "<C-/>", "<cmd>ToggleTerm size=20 direction=horizontal<CR>")
 set({ "t" }, "<C-/>", "<cmd>ToggleTerm<CR>")
