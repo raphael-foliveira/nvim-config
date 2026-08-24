@@ -10,14 +10,6 @@ set({ "n" }, "<C-p>", "<cmd>Telescope find_files<CR>")
 set({ "n" }, "J", "", opts)
 set({ "i" }, "<M-BS>", "<C-w>", opts)
 
-set({ "n" }, "<CR>", function()
-  local ok, blink = pcall(require, "blink.cmp")
-  if ok and blink.is_menu_visible() and blink.accept() then
-    return ""
-  end
-  return "<CR>"
-end, { expr = true, silent = true })
-
 set({ "i" }, "<C-c>", function()
   local ok, cmp = pcall(require, "cmp")
   if ok and cmp.visible() then
