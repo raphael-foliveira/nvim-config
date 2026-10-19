@@ -1,5 +1,13 @@
 return {
   {
+    "mofiqul/vscode.nvim",
+    opts = {
+      group_overrides = {
+        NeoTreeGitIgnored = { fg = "#808080" },
+      },
+    },
+  },
+  {
     "projekt0n/github-nvim-theme",
     name = "github-theme",
     lazy = false,
@@ -8,19 +16,16 @@ return {
       require("github-theme").setup({
         groups = {
           github_dark_default = {
-            -- Darker than the default #484f58 so the current line blends in
             CursorLine = { bg = "palette.border.muted" },
           },
         },
       })
-
-      vim.cmd("colorscheme github_dark_default")
     end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "vscode",
     },
   },
   { "EdenEast/nightfox.nvim" },
@@ -32,8 +37,15 @@ return {
       })
     end,
   },
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
+    opts = {
+      contrast = "hard",
+    },
+  },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
   {
     "folke/tokyonight.nvim",
     name = "tokyonight",
