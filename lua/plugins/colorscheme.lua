@@ -8,6 +8,22 @@ return {
     },
   },
   {
+    "akinsho/bufferline.nvim",
+    opts = {
+      highlights = function()
+        if vim.g.colors_name ~= "vscode" then
+          return {}
+        end
+        return {
+          background = { fg = "#969696" },
+          buffer_visible = { fg = "#969696" },
+          close_button = { fg = "#969696" },
+          close_button_visible = { fg = "#969696" },
+        }
+      end,
+    },
+  },
+  {
     "projekt0n/github-nvim-theme",
     name = "github-theme",
     lazy = false,
