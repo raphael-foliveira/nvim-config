@@ -4,6 +4,9 @@ return {
     opts = {
       group_overrides = {
         NeoTreeGitIgnored = { fg = "#808080" },
+        -- Go packages use the variable color; type highlights stay green.
+        ["@module.go"] = { link = "@variable" },
+        ["@lsp.type.namespace.go"] = { link = "@variable" },
       },
     },
   },
